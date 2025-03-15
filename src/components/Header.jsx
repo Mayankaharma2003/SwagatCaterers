@@ -15,8 +15,7 @@ const Header = () => {
             <div className="menu-part1 me-5" id="m1">
               <p className="d-flex gap-2 align-items-center animate__animated animate__fadeIn">
                 <a href="#" className="for-book btn" style={{ backgroundColor: '#760400', color: 'white', padding: '7px 20px', textDecoration: 'none' }}>For Booking</a>
-                <a href="tel:+919821705154" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 98217 05154,</a>
-                <a href="tel:+918291440922" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 82914 40922</a>
+                <a href="tel:+919229031000" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 92290 31000</a>
               </p>
             </div>
             <div className="menu-part2">
@@ -34,8 +33,7 @@ const Header = () => {
             <div className="menu-part1 d-none" id="m2">
               <p className="d-flex gap-2 align-items-center animate__animated animate__fadeIn">
                 <a href="#" className="for-book btn" style={{ backgroundColor: '#760400', color: 'white', padding: '7px 20px', textDecoration: 'none' }}>For Booking</a>
-                <a href="tel:+919821705154" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 98217 05154,</a>
-                <a href="tel:+918291440922" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 82914 40922</a>
+                <a href="tel:+919229031000" className="mob-book" style={{ fontSize: '18px', color: '#000', textDecoration: 'none', fontWeight: 500 }}>+91 92290 31000</a>
               </p>
             </div>
           </div>

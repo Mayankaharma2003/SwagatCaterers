@@ -1,35 +1,50 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import FoodMenu from './pages/FoodMenu';
-import MuhurthamLunch from './pages/MuhurthamLunch';
-import Services from './pages/Services';
-import Gallery from './pages/Gallery';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import HomeGallery from './components/HomeGallery';
+import HomeMenu from './components/HomeMenu';
+import Testimonials from './components/Testimonials';
+import Gallery from './components/Gallery';
+import Menu from './components/Menu';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
+import WeddingEvents from './pages/WeddingEvents';
+import CorporateEvents from './pages/CorporateEvents';
+import BirthdayParties from './pages/BirthdayParties';
+import SpecialOccasions from './pages/SpecialOccasions';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
-        <Header />
-        <main className="flex-grow-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/food-menu" element={<FoodMenu />} />
-            <Route path="/muhurtham-lunch-iyer" element={<MuhurthamLunch />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+      <div className="min-h-screen bg-theme-light">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <HomeGallery />
+              <Services />
+              <Testimonials />
+            </>
+          } />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/wedding" element={<WeddingEvents />} />
+          <Route path="/services/corporate" element={<CorporateEvents />} />
+          <Route path="/services/birthday" element={<BirthdayParties />} />
+          <Route path="/services/special" element={<SpecialOccasions />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
   );
-}
+};
 
 export default App;

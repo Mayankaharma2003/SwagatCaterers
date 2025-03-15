@@ -1,139 +1,159 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <>
-      <section className="banner animate__animated animate__fadeIn">
-        <div className="inner-banner">
-          <div className="inner-banner-con">
-            <h2>About Us</h2>
+    <div className="pt-20">
+      {/* Hero Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="bg-gray-900 text-white py-20"
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Swagat Caterers</h1>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Delivering authentic South Indian flavors and exceptional catering services since inception
+            </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="content-area">
-        <div className="about-sec-cr1">
-          <div className="container-fluid">
-            <div className="two-div d-flex flex-column flex-md-row">
-              <div className="left-about-sec-cr1 animate__animated animate__fadeInLeft">
-                <img src="https://www.srinivasanevents.com/wp-content/uploads/2024/10/05-4.png" alt="South Indian Caterers and Wedding Planner in Mumbai" className="w-100" style={{ height: '800px' }} />
-              </div>
-              <div className="right-about-sec-cr1">
-                <div className="about-content-box position-relative p-4 animate__animated animate__fadeInRight" style={{ backgroundColor: '#770401', width: '525px', left: '-54%', top: '8%', borderRadius: '20px 80px 20px 80px' }}>
-                  <img src="https://www.srinivasanevents.com/wp-content/uploads/2024/09/9334075-1.png" alt="Vegetarian South Indian Catering" className="w-43" />
-                  <h2 className="text-white mt-3" style={{ fontFamily: 'Cinzel Decorative, serif', fontSize: '40px' }}>We provide catering service for all events since 2012</h2>
-                  <p className="text-white" style={{ fontSize: '16px', textAlign: 'left' }}>
-                    Welcome to Swagat Shree Caterers, your premium South Indian Caterers and Wedding Planner in Mumbai. Since 2012, we have been dedicated to providing exceptional catering services that celebrate the vibrant flavors of South Indian cuisine.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="about-section-cr-2 bg-f6f0ea">
-            <div className="container">
-              <div className="inner-about-section-cr-2 py-5">
-                <p className="para-cs text-center text-770401 animate__animated animate__fadeInUp" style={{ fontSize: '16px' }}>our work process</p>
-                <h2 className="text-760400 text-center mb-5 animate__animated animate__fadeInUp" style={{ fontFamily: 'Cinzel Decorative, serif', fontSize: '60px' }}>How It Works</h2>
-                <div className="about-part1 d-flex flex-wrap justify-content-center gap-4">
-                  <div className="about-card d-flex gap-3 animate__animated animate__fadeInUp">
-                    <div className="tw-did-card1">
-                      <p className="text-dark" style={{ fontFamily: 'Fredericka the Great, serif', fontSize: '100px', marginTop: '66%', transform: 'rotate(270deg)' }}>01</p>
-                    </div>
-                    <div className="tw-did-card">
-                      <h3 className="text-36456f mb-2" style={{ fontSize: '25px' }}>Consultation</h3>
-                      <hr className="border-760400" />
-                      <p style={{ fontSize: '16px', textAlign: 'left' }}>We begin with a comprehensive consultation to understand your vision, preferences, and dietary requirements.</p>
-                    </div>
-                  </div>
-                  <div className="about-card d-flex gap-3 animate__animated animate__fadeInUp" style={{ animationDelay: '0.2s' }}>
-                    <div className="tw-did-card1">
-                      <p className="text-dark" style={{ fontFamily: 'Fredericka the Great, serif', fontSize: '100px', marginTop: '66%', transform: 'rotate(270deg)' }}>02</p>
-                    </div>
-                    <div className="tw-did-card">
-                      <h3 className="text-36456f mb-2" style={{ fontSize: '25px' }}>Menu Planning</h3>
-                      <hr className="border-760400" />
-                      <p style={{ fontSize: '16px', textAlign: 'left' }}>Our culinary experts curate a customized menu highlighting the best of South Indian cuisine.</p>
-                    </div>
-                  </div>
-                  <div className="about-card d-flex gap-3 animate__animated animate__fadeInUp" style={{ animationDelay: '0.4s' }}>
-                    <div className="tw-did-card1">
-                      <p className="text-dark" style={{ fontFamily: 'Fredericka the Great, serif', fontSize: '100px', marginTop: '66%', transform: 'rotate(270deg)' }}>03</p>
-                    </div>
-                    <div className="tw-did-card">
-                      <h3 className="text-36456f mb-2" style={{ fontSize: '25px' }}>Preparation</h3>
-                      <hr className="border-760400" />
-                      <p style={{ fontSize: '16px', textAlign: 'left' }}>We use fine ingredients to prepare each dish, ensuring authenticity and taste.</p>
-                    </div>
-                  </div>
-                  <div className="about-card d-flex gap-3 animate__animated animate__fadeInUp" style={{ animationDelay: '0.6s' }}>
-                    <div className="tw-did-card1">
-                      <p className="text-dark" style={{ fontFamily: 'Fredericka the Great, serif', fontSize: '100px', marginTop: '66%', transform: 'rotate(270deg)' }}>04</p>
-                    </div>
-                    <div className="tw-did-card">
-                      <h3 className="text-36456f mb-2" style={{ fontSize: '25px' }}>Service</h3>
-                      <hr className="border-760400" />
-                      <p style={{ fontSize: '16px', textAlign: 'left' }}>Our professional staff provides exceptional service on the event day.</p>
-                    </div>
-                  </div>
-                  <div className="about-card d-flex gap-3 animate__animated animate__fadeInUp" style={{ animationDelay: '0.8s' }}>
-                    <div className="tw-did-card1">
-                      <p className="text-dark" style={{ fontFamily: 'Fredericka the Great, serif', fontSize: '100px', marginTop: '66%', transform: 'rotate(270deg)' }}>05</p>
-                    </div>
-                    <div className="tw-did-card">
-                      <h3 className="text-36456f mb-2" style={{ fontSize: '25px' }}>Presentation</h3>
-                      <hr className="border-760400" />
-                      <p style={{ fontSize: '16px', textAlign: 'left' }}>We set up a beautiful display that showcases the food and adds elegance.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="abt-sec-3 animate__animated animate__fadeIn">
-            <div className="container">
-              <div className="inner-abt-sec3 py-5 d-flex flex-column flex-md-row gap-4">
-                <div className="abt-sec-3-left animate__animated animate__fadeInLeft" style={{ width: '60%' }}>
-                  <h3 className="text-770401" style={{ fontSize: '39px', lineHeight: '39px' }}>Affordable Catering & Event <span className="text-37446f fw-bold">Management Services in Mumbai</span></h3>
-                  <p className="animate__animated animate__fadeInLeft" style={{ fontSize: '16px', textAlign: 'justify', color: '#000' }}>
-                    At Swagat Shree Caterers, our mission is to create memorable experiences with authentic Vegetarian South Indian Catering. Whether it’s a wedding, corporate event, or family gathering, we bring tradition to your table.
-                  </p>
-                </div>
-                <div className="abt-sec-3-right animate__animated animate__fadeInRight" style={{ width: '40%' }}>
-                  <img src="https://www.srinivasanevents.com/wp-content/uploads/2024/09/g14.jpg" alt="South Indian Caterers and Wedding Planner in Mumbai" className="w-100" style={{ marginTop: '11%' }} />
-                </div>
-              </div>
-              <p className="center-para text-center animate__animated animate__fadeInUp" style={{ marginTop: '-6%', marginBottom: '9%', fontSize: '16px', textAlign: 'justify', color: '#000' }}>
-                We pride ourselves on being partners in your celebration. Contact us today to experience the best in Vegetarian South Indian Catering with Swagat Shree Caterers—where tradition meets excellence.
+      {/* Our Story Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="py-20"
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+              <p className="text-gray-600 mb-6">
+                Founded with a passion for authentic South Indian cuisine, Swagat Caterers has been serving 
+                delicious food and creating memorable experiences for our clients. Our journey began with 
+                a simple mission: to bring the rich flavors and traditions of South Indian cuisine to every event 
+                we cater.
+              </p>
+              <p className="text-gray-600">
+                Over the years, we have grown from a small family business to one of the most trusted names 
+                in catering, while maintaining our commitment to quality, authenticity, and customer satisfaction.
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="seo-foo animate__animated animate__fadeIn">
-          <div className="container">
-            <div className="see-foo-inner">
-              <h3 className="text-760400 mb-4" style={{ fontFamily: 'Cinzel Decorative, serif', fontSize: '36px' }}>Our Services Area</h3>
-              <div className="se-se d-flex flex-wrap gap-3">
-                <div className="se-leee flex-fill">
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Mumbai</a></div>
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Baroda</a></div>
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Pune</a></div>
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Bengaluru</a></div>
-                </div>
-                <div className="se-leee flex-fill">
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Chennai</a></div>
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Thirchy</a></div>
-                  <div className="b"><a href="#" className="text-713c3f text-decoration-none">Our Services in Hyderabad</a></div>
-                </div>
-              </div>
+            <div className="relative">
+              <img
+                src="/images/about-story.jpg"
+                alt="Our Story"
+                className="rounded-lg shadow-xl"
+              />
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </motion.section>
+
+      {/* Values Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="py-20 bg-gray-50"
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <motion.div
+                key={value.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white p-8 rounded-lg shadow-lg"
+              >
+                <div className="text-orange-600 mb-4">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Team Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="py-20"
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {team.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="text-center"
+              >
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+                  <span className="text-4xl">{member.avatar}</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
+                <p className="text-gray-600">{member.role}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+    </div>
   );
 };
+
+const values = [
+  {
+    title: "Quality",
+    description: "We never compromise on the quality of ingredients and service delivery.",
+    icon: "🌟"
+  },
+  {
+    title: "Tradition",
+    description: "Preserving authentic South Indian flavors and cooking methods.",
+    icon: "🏺"
+  },
+  {
+    title: "Customer First",
+    description: "Your satisfaction is our top priority in everything we do.",
+    icon: "🤝"
+  }
+];
+
+const team = [
+  {
+    name: "Ramesh Kumar",
+    role: "Founder & Head Chef",
+    avatar: "👨‍🍳"
+  },
+  {
+    name: "Priya Venkat",
+    role: "Event Manager",
+    avatar: "👩‍💼"
+  },
+  {
+    name: "Suresh Iyer",
+    role: "Operations Head",
+    avatar: "👨‍💼"
+  },
+  {
+    name: "Lakshmi Rao",
+    role: "Customer Relations",
+    avatar: "👩‍💼"
+  }
+];
 
 export default About;
